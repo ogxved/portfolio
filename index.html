@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OGxVED — Server & Community Manager</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%238b5cf6'/%3E%3Cstop offset='100%25' stop-color='%23e879f9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%230a0a12'/%3E%3Crect x='2' y='2' width='60' height='60' rx='12' fill='none' stroke='url(%23g)' stroke-width='2'/%3E%3Ctext x='32' y='42' font-family='Chakra Petch, Arial, sans-serif' font-weight='700' font-size='28' text-anchor='middle' fill='url(%23g)'%3EOG%3C/text%3E%3C/svg%3E">
+
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
 
@@ -129,13 +130,15 @@
     font-size:24px;
     background-position:center;
     box-shadow:0 0 24px rgba(139,92,246,0.35);
+    overflow:hidden;
   }
 
-  .logo-mark span{
-    background:linear-gradient(120deg,var(--purple),var(--magenta));
-    -webkit-background-clip:text;
-    background-clip:text;
-    color:transparent;
+  .logo-mark img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:14px;
+    display:block;
   }
 
   h1.name{
@@ -452,7 +455,9 @@
     <div class="tag">Currently managing 8 active communities</div>
 
     <div class="brand-row">
-      <div class="logo-mark"><span>OG</span></div>
+      <div class="logo-mark">
+        <img src="og.webp" alt="OG">
+      </div>
       <h1 class="name">OGxVED</h1>
     </div>
 
@@ -601,12 +606,11 @@
         </div>
       </div>
 
-      <!-- NEW SERVER -->
       <div class="card current">
         <div class="card-top">
           <div>
             <div class="server-name">LunarSMP</div>
-            <div class="members">Current community</div>
+            <div class="members">382+ members</div>
           </div>
           <span class="badge current">Current</span>
         </div>
@@ -617,12 +621,11 @@
         </div>
       </div>
 
-      <!-- NEW SERVER -->
       <div class="card current">
         <div class="card-top">
           <div>
             <div class="server-name">ZenithSMP</div>
-            <div class="members">Current community</div>
+            <div class="members">900+ members</div>
           </div>
           <span class="badge current">Current</span>
         </div>
@@ -630,6 +633,36 @@
         <div class="desc">
           Managing Discord and Minecraft operations, staff systems,
           moderation, and day-to-day community management.
+        </div>
+      </div>
+
+      <div class="card current">
+        <div class="card-top">
+          <div>
+            <div class="server-name">NesterSMP</div>
+            <div class="members">Current community</div>
+          </div>
+          <span class="badge current">Current</span>
+        </div>
+        <div class="role">Discord & Minecraft Server Manager</div>
+        <div class="desc">
+          Managing Minecraft and Discord operations, staff coordination,
+          moderation, and the overall community experience.
+        </div>
+      </div>
+
+      <div class="card current">
+        <div class="card-top">
+          <div>
+            <div class="server-name">StrafeSMP</div>
+            <div class="members">Current community</div>
+          </div>
+          <span class="badge current">Current</span>
+        </div>
+        <div class="role">Discord & Minecraft Server Manager</div>
+        <div class="desc">
+          Managing Minecraft and Discord operations, staff coordination,
+          moderation, and the overall community experience.
         </div>
       </div>
 
